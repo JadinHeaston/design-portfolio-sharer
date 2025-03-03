@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set(TZ);
 
 
 //Setting any configuration options.

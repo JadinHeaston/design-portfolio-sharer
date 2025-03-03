@@ -381,3 +381,11 @@ class ScopeTimer
 
 	//$timer = new ScopeTimer(__FILE__);
 }
+
+
+class DBConnector extends DatabaseConnector
+{
+	public function init()
+	{
+	}
+}

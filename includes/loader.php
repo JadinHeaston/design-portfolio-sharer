@@ -7,3 +7,9 @@ require_once(__DIR__ . '/functions.php');
 
 if (((isset($GLOBALS['disable_auth']) && $GLOBALS['disable_auth'] !== true) && auth() === false))
 	reauth();
+
+if (checkForFolder(ROOT_DATA_FOLDER) === false)
+	exit(1);
+
+$GLOBALS['DB'] = new DBConnector('sqlite', DATABASE_PATH);
+$GLOBALS['DB']->init();

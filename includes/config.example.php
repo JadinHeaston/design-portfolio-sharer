@@ -1,15 +1,11 @@
 <?php
 define('APP_ROOT', '/');
 define('DEBUG', false);
+define('TZ', 'America/Chicago');
 define('DISABLE_ERROR_EMAILS', false);
 define('REQUIRE_JAVASCRIPT', false); //Setting to 'true' causes a full page pop up, preventing site usage, if JS is disabled.
 
+define('ROOT_DATA_FOLDER', __DIR__ . '/../data/');
+
 //Database
-define('DB_HOST', __DIR__ .  '/../data/database.sqlite3');
-define('DB_USERNAME', '');
-define('DB_PASSWORD', '');
-define('DB_DATABASE', '');
-define('DB_TYPE', 'sqlite');
-define('DB_PORT', 1433);
-define('DB_TRUST_CERT', 1);
-define('DB_CHARSET', 'utf8mb4');
+define('DATABASE_PATH', ROOT_DATA_FOLDER . DIRECTORY_SEPARATOR . 'database.sqlite3');
