@@ -4,7 +4,7 @@ require_once(__DIR__ . '/templates/header.php');
 
 echo <<<HTML
 	<main>
-		Hello World!
+		Display the general portfolio!
 	</main>
 	HTML;
 
